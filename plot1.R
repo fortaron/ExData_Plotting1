@@ -14,10 +14,10 @@ housesub <- house[house$Date >= as.Date("2007-02-01") & house$Date <= as.Date("2
 # Plotting
 
 png(filename = "Plot1.png",
-    width = 480, height = 480, units = "px") # starting the PNG device
+    width = 480, height = 480, units = "px", bg = "transparent") # starting the PNG device
 
 hist(housesub$Global_active_power,
      col = "red", xlab = "Global Active Power (kilowatts)",
-     main = "Global Active Power")
+     main = "Global Active Power", bg = NA)
 
 dev.off() # Closing the plotting device

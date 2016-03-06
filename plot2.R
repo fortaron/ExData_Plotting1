@@ -15,7 +15,7 @@ housesub$datetime <- as.POSIXct(paste(housesub$Date, housesub$Time, sep = " ")) 
 # Plotting
 
 png(filename = "Plot2.png",
-    width = 480, height = 480, units = "px") # starting the PNG device
+    width = 480, height = 480, units = "px", bg = "transparent") # starting the PNG device
 
 plot(housesub$Global_active_power ~ as.POSIXct(housesub$datetime),
      type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")

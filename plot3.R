@@ -15,7 +15,7 @@ housesub$datetime <- as.POSIXct(paste(housesub$Date, housesub$Time, sep = " ")) 
 # Plotting
 
 png(filename = "Plot3.png",
-    width = 480, height = 480, units = "px") # starting the PNG device
+    width = 480, height = 480, units = "px", bg = "transparent") # starting the PNG device
 
 
 plot(housesub$Sub_metering_1 ~ as.POSIXct(housesub$datetime),
